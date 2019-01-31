@@ -1,8 +1,8 @@
 int x = 20;
 
-int color1 = (int)(Math.random()*255);
-int color2 = (int)(Math.random()*255);
-int color3 = (int)(Math.random()*255);
+int color1 = (int)(Math.random()*75)+75;
+int color2 = (int)(Math.random()*75)+75;
+int color3 = (int)(Math.random()*75)+75;
 public void setup()
 {
 	size(1000,1000);
@@ -19,9 +19,9 @@ public void mouseDragged()//optional
 		x+=10;
 	}else{
 		x = 0;
-		color1 = (int)(Math.random()*255);
-		color2 = (int)(Math.random()*255);
-		color3 = (int)(Math.random()*255);
+		color1 = (int)(Math.random()*75)+75;
+		color2 = (int)(Math.random()*50)+50;
+		color3 = (int)(Math.random()*75)+75;
 	}
 }
 public void sierpinski(int x, int y, int len) 
